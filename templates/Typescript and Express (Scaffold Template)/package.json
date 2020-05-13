@@ -1,11 +1,11 @@
 {
-  "name": "npm-project",
+  "name": "typescript-express-scaffold",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.ts",
-    "build": "rimraf ./build && tsc"
+    "build": "rimraf ./build && tsc",
+    "start:dev": "nodemon src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@types/express": "^4.17.6",
     "nodemon": "^2.0.3",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "ts-node": "^8.10.1"
   }
 }

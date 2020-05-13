@@ -36,6 +36,8 @@ inquirer.prompt(QUESTIONS)
 
         fs.mkdirSync(`${CURR_DIR}/${projectName}`);
 
+        console.log("Generating template...");
+
         createDirectoryContents(templatePath, projectName);
     });
 
@@ -62,19 +64,19 @@ function createDirectoryContents(templatePath, newProjectPath) {
             createDirectoryContents(`${templatePath}/${file}`, `${newProjectPath}/${file}`);
         }
     });
-
+    
     postProcess(newProjectPath);
 }
 
 function postProcess(templatePath) {
     const isNode = fs.existsSync(path.join(templatePath, 'package.json'));
     if (isNode) {
+        console.log("Installing dependencies...");
         shell.cd(templatePath);
-        const result = shell.exec('yarn install');
+        const result = shell.exec('npm i');
         if (result.code !== 0) {
             return false;
         }
     }
-    
     return true;
 }
