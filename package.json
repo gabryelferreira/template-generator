@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "bin": {
-    "generate": "./index.js"
+    "template-generator": "./index.js"
   },
   "repository": {
     "type": "git",
