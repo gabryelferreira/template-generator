@@ -1,16 +1,24 @@
 {
-  "name": "template-generator",
+  "name": "@gabryelferreira/template-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Generate common templates.",
   "main": "index.js",
-  "bin": {
-    "generate": "./index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "inquirer": "^7.1.0",
     "shelljs": "^0.8.4"
-  }
+  },
+  "devDependencies": {},
+  "bin": {
+    "generate": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabryelferreira/template-generator.git"
+  },
+  "author": "Gabryel Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabryelferreira/template-generator/issues"
+  },
+  "homepage": "https://github.com/gabryelferreira/template-generator#readme"
 }
