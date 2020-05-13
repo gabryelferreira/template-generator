@@ -5,8 +5,6 @@
 
 This is just the beginning. Keep watching this project to get more common templates.
 
-----
-
 ## The Goal of Template Generator
 
 The Template Generator creates common templates that you usually have to create from scratch.
